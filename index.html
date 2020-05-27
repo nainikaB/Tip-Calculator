@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<head>
+  <title>Budget Calculator</title>
+</head>
+<body>
+  <form>
+    <h3>How much did you pay?</h3>
+    <input type="text" class="billAmt" placeholder="bill amount" />
+    <br />
+    <h3>How much did you like the food?</h3>
+    <select class="service">
+      <option value="0.3">20&#37; &#45; outstanding</option>
+      <option value="0.15">15&#37; &#45; V GOOD</option>
+      <option value="0.1">10&#37; &#45; GD</option>
+      <option value="0.05">5&#37; &#45; OKAY</option>
+    </select>
+    <h3>How many people are you splitting the bill with?</h3>
+    <input input="text" class="splitAmt" placeholder="number of people" />
+    <button class="calc">Calculate</button>
+  </form>
+  <div class="total">
+    Total Tip <sup>$</sup><span class="tip">0.00</span>
+    <p>each</p>
+  </div>
+  <script src="./app.js"></script>
+</body>
